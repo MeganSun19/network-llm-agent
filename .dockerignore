@@ -1,0 +1,15 @@
+.git
+.gitignore
+.env
+.env.example
+.venv
+venv
+__pycache__
+*.pyc
+.DS_Store
+.idea
+.vscode
+README.md
+LICENSE
+deploy-vm.sh
+conversation*.json

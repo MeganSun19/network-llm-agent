@@ -1,0 +1,39 @@
+# Network device inventory.
+# Passwords are encrypted with a Fernet key; generate via:
+#   python scripts/encrypt_password.py
+#
+# RFC 5737 documentation IPs are used here as placeholders. Replace
+# with real reachable hosts in your own environment.
+
+devices:
+  router-1:
+    host: 192.0.2.10
+    username: admin
+    password: "<gAAAAA...replace-with-encrypted>"
+    port: 22
+    timeout: 15
+    device_type: router
+
+  router-2:
+    host: 192.0.2.11
+    username: admin
+    password: "<gAAAAA...replace-with-encrypted>"
+    port: 22
+    timeout: 15
+    device_type: router
+
+  switch-1:
+    host: 198.51.100.20
+    username: admin
+    password: "<gAAAAA...replace-with-encrypted>"
+    port: 22
+    timeout: 15
+    device_type: switch
+
+groups:
+  routers:
+    - router-1
+    - router-2
+  production:
+    - router-1
+    - switch-1

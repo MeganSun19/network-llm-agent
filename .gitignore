@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.Python
+build/
+dist/
+
+# Virtualenv
+.venv/
+venv/
+env/
+
+# Environment & secrets
+.env
+*.fernet
+*.key
+fernet.key
+
+# Inventory with real device data
+config/devices.yaml.local
+config/devices.local.yaml
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# Conversations & runtime artifacts
+conversation*.json
+*.log

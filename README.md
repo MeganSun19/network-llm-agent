@@ -9,6 +9,18 @@ plain-language summary plus the raw output.
 > operations. Validated end-to-end against Cisco NX-OS and IOS-XR
 > devices in lab.
 
+## About this release
+
+This codebase was extracted, sanitized, and re-released in 2026 from
+an internal prototype I built in **2024**. It reflects the LLM
+tool-calling patterns of that period — a hand-rolled prompt-driven
+JSON loop, predating the OpenAI Responses API and the maturing of
+mainstream agent frameworks (LangGraph, LlamaIndex agents, Strands,
+etc.). The architecture has **not been refreshed since**; treat this
+as a snapshot of "what shipped in 2024", not a state-of-the-art
+reference. A 2026 rebuild would likely use a managed agent SDK and
+structured output APIs.
+
 ## Why this exists
 
 Most "AI for networks" demos stop at chat. This project closes the

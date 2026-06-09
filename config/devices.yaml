@@ -30,7 +30,7 @@ devices:
     timeout: 15
     device_type: switch
 
-groups:
+device_groups:
   routers:
     - router-1
     - router-2
